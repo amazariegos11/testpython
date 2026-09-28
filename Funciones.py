@@ -26,13 +26,14 @@ while opcion != 5:
   print("4..... DIVIDIR")
   print("5..... SALIR")
   opcion = int(input("Ingrese una opción... "))
-  a = int(input("Ingrese un No. "))
-  b = int(input("Ingrese un No. "))
+
 
   # VALIDACION PARA SALIR 
   if opcion == 5:
     break
   
+  a = int(input("Ingrese un No. "))
+  b = int(input("Ingrese un No. "))
 
   if opcion == 1:
     print("Resultado de la suma ", sumar(a , b))
