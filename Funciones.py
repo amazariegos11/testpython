@@ -29,6 +29,11 @@ while opcion != 5:
   a = int(input("Ingrese un No. "))
   b = int(input("Ingrese un No. "))
 
+  # VALIDACION PARA SALIR 
+  if opcion == 5:
+    break
+  
+
   if opcion == 1:
     print("Resultado de la suma ", sumar(a , b))
   elif opcion == 2:
@@ -38,4 +43,4 @@ while opcion != 5:
   elif opcion == 4:
     print("Resultado de la división " , dividir(a , b))
   else:
-    print("Opcioón no valida")
+    print("Opción no valida")
