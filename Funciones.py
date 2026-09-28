@@ -13,6 +13,8 @@ def multiplicar(a , b):
 
 # -------------- FUNCION DIVIDIR -------------- 
 def dividir(a , b):
+  if b == 0:
+    return None
   return a / b
 
 opcion = 0
@@ -42,6 +44,10 @@ while opcion != 5:
   elif opcion == 3:    
     print("Resultado de la multipicación es " , multiplicar(a , b))
   elif opcion == 4:
-    print("Resultado de la división " , dividir(a , b))
+    resultado = dividir(a , b)
+    if resultado is None:
+      print("imposible divisón entre 0")
+    else:
+      print("Resultado de la división " , resultado)
   else:
     print("Opción no valida")
